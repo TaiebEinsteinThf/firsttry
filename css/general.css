@@ -1,0 +1,166 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+header {
+    height: 90px;
+    background-color: #333;
+    padding-top: 10px ;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-content .brand {
+    font-size: 32px;
+    text-decoration: none;
+    color: #fff;
+}
+nav ul#user-info {
+    display:none ; 
+   align-items: center;
+}
+nav ul#user-info li{
+    position: relative;
+    margin: 0px 10px;
+}
+
+nav ul#user-info li i{
+
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+    
+ }
+ nav ul#user-info .carts-products{
+    position: absolute;
+    width: 200px;
+    transform: translate(-92% , 0);
+    background: #fff;
+    top: 71px;
+    padding: 10px;
+    border: 1px solid green;
+    
+ }
+ nav ul#user-info .carts-products a{
+    background: #08ff08;
+    display: block;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    text-decoration: none;
+    padding: 7px;
+
+ }
+ nav ul#user-info li .badge{
+    width: 20px;
+    height: 20px;
+    background: red;
+    color: #fff;
+    text-align: center;
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+    top: -10px;
+    right: -11px;
+    line-height: 20px;
+    font-size: 10px;
+
+
+ }
+nav ul{
+    display: flex;
+    list-style: none;
+}
+nav li a {
+    display: block;
+    color: #fff;
+    min-width: 50px;
+    margin: 0px 5px;
+    padding: 5px;
+    background: #08f;
+}
+/* ****************** form ************************ */
+.section-form {
+    position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50% ,-50%);
+width: 40%;
+text-align: center;
+background: #bc6ff1;
+padding: 20px;
+}
+.section-form h2{
+    font-size: 50px;
+    letter-spacing: 2px;
+    color: rgba(0, 38, 255, 0.911);
+}
+.section-form form input {
+ display: block;
+ width: 100%;
+ padding: 5px;
+ margin:5px 0;
+ height: 40px;
+ border:1px solid #ddd;
+ outline: 0;
+}
+.section-form form input[type=submit] {
+    font-size: 25px;
+    text-transform: uppercase;
+    height: auto;
+
+}
+.section-form form input[type=submit]:hover{
+    opacity: 0.8;
+}
+/**********************************************************set product ****************************************************************************/
+.products{
+    width: 60%;
+    margin: 10px 0 ;
+}
+.product-item{
+    display: flex;
+    width: 100%;
+    border: 1px solid #ddd;
+    margin-bottom: 15px;
+    min-height: 130px;
+}
+.product-item-img{
+    width: 20%;
+    margin-right: 10px;
+}
+.product-item-action{
+    flex: 1;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.product-item .add-to-card{
+display: block;
+margin-left: auto;
+background-color: #08ff08;
+color: #fff;
+border: 0;
+padding: 10px 20px;
+font-size: 15px;
+cursor: pointer;
+} 
+.product-item-action .favorite{
+    cursor: pointer;
+    display: block;
+    width:28px;
+    margin-left: auto;
+}
